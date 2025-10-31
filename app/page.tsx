@@ -17,7 +17,7 @@ export default function Home() {
             I’m a technical SEO by trade, but understand that brand visibility doesn’t end
             with meta tags. I’m often dropped into the messy middle of marketing
              - technical problems, branding, content planning, PR, social - and become the
-            operational glue between csuite, business owners, decision makers, marketing and engineering teams to drive change.
+            operational glue between teams to drive change; from csuite to execs, and from marketing & product teams to engineering.
           </p>
 
           {/* CTAs */}
