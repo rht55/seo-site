@@ -10,12 +10,13 @@ export default function About() {
       </p>
       <p className="mt-4 text-neutral-700">
         My default setting is: gather the data, simplify the plan, ship in
-        increments. I enjoy architecture, render diagnostics, log analysis, and
-        all the quiet details that keep SEO stable at scale.
+        increments. I enjoy finding and fixing problems, scaling out websites
+        to drive traffic, working across different disciplines, architecture, 
+        diagnostics, and all the quiet details that keep SEO stable at scale.
       </p>
       <p className="mt-4 text-neutral-700">
         Off-screen: coffee, running, and an unhealthy interest in how AI is
-        changing discovery (and how it’s currently being gamed).
+        changing the world - and have been since before it was cool.
       </p>
     </section>
   );
