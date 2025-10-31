@@ -34,7 +34,7 @@ export default function Home() {
         <div className="flex justify-center md:justify-end">
           <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden border border-neutral-800 shadow-lg">
             <Image
-              src="/richardtalbot.jpg"
+              src="/richard-talbot.jpg"
               alt="Richard Talbot"
               fill
               className="object-cover"
