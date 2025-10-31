@@ -17,7 +17,7 @@ export default function About() {
       </p>
       <p className="mt-4 text-neutral-300">
         Off-screen: cycling, coffee(ran a mildly successful ecom website for a while), running(short distances), and have an unhealthy interest in how AI is
-        changing the world - and have been interested a long time before it was cool. I was emailing Ray Kurzweil in 2012 and buying Superintelligence books in 2014. 
+        changing the world - and have been interested a long time before it was cool. I was emailing Ray Kurzweil at Google in 2011 and was reading Superintelligence books back in 2018. 
       </p>
     </section>
   );
