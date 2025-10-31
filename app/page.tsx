@@ -7,17 +7,17 @@ export default function Home() {
         {/* Text block */}
         <div>
           <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-            Richard Talbot — Digital Marketing Consultancy &amp; Technical SEO
+            Richard Talbot - Digital Marketing Consultancy &amp; Technical SEO
           </h1>
           <p className="mt-2 text-lg text-neutral-500">
             Building organic growth.
           </p>
 
           <p className="mt-6 text-lg text-neutral-600">
-            I’m a technical SEO by trade, but understand visibility doesn’t end
+            I’m a technical SEO by trade, but understand that brand visibility doesn’t end
             with meta tags. I’m often dropped into the messy middle of marketing
-             — analytics, content planning, PR, social — and become the
-            operational glue between marketing and engineering teams to drive change.
+             — technical problems, branding, content planning, PR, social — and become the
+            operational glue between csuite, business owners, decision makers, marketing and engineering teams to drive change.
           </p>
 
           {/* CTAs */}
