@@ -16,7 +16,7 @@ export default function About() {
         site architecture, diagnostics, and all the quiet details that keep websites stable at scale.
       </p>
       <p className="mt-4 text-neutral-300">
-        Off-screen: cycling, coffee(ran a mildly successful ecom website for a while), running(short distances), and have an unhealthy interest in how AI is
+        Off-screen: cycling, coffee(ran a mildly successful ecom website for a while), running(short distances), finance & economics, and have an unhealthy interest in how AI is
         changing the world - and have been interested a long time before it was cool. I was emailing Ray Kurzweil at Google in 2011 and was reading Superintelligence books back in 2018. 
       </p>
     </section>
