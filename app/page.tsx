@@ -16,8 +16,9 @@ export default function Home() {
           <p className="mt-6 text-lg text-neutral-600">
             I’m a technical SEO by trade, but understand that brand visibility doesn’t end
             with meta tags. I’m often dropped into the messy middle of marketing
-             - technical problems, branding, content planning, PR, social - and become the
-            operational glue between teams to drive change; from csuite to execs, and from marketing & product teams to engineering.
+             - technical problems, branding, ads, tracking, content planning, PR, social - and become the
+            operational glue between teams to drive change; from csuite to execs, and from marketing & product teams to engineering. 
+            I have a wide area of knowledge and can usually hit the ground running in any niche. 
           </p>
 
           {/* CTAs */}
