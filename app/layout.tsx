@@ -1,19 +1,25 @@
 import "./globals.css";
 import Link from "next/link";
+import type { Metadata } from "next";
+import React from "react";
 
-export const metadata = {
+export const metadata: Metadata = {
   title: "Richard Talbot — Digital Marketing Consultancy & Technical SEO",
   description: "Building organic growth.",
 };
 
-export default function RootLayout({ children }) {
+export default function RootLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
   return (
     <html lang="en">
       <body className="bg-black text-white font-sans">
         <header className="border-b border-neutral-800">
           <nav className="max-w-5xl mx-auto flex items-center justify-between py-4 px-6">
-            <Link href="/" className="text-xl hover:opacity-80">
-              <span className="sr-only">Home</span>
+            {/* Home icon */}
+            <Link href="/" className="text-xl hover:opacity-80" aria-label="Home">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 fill="none"
