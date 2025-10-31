@@ -16,16 +16,23 @@ export default function Home() {
           <p className="mt-6 text-lg text-neutral-600">
             I’m a technical SEO by trade, but understand visibility doesn’t end
             with meta tags. I’m often dropped into the messy middle of marketing
-            teams — analytics, content planning, PR, social — and become the
-            operational glue between marketing and engineering to drive change.
+             — analytics, content planning, PR, social — and become the
+            operational glue between marketing and engineering teams to drive change.
           </p>
 
-          <div className="mt-8">
+          {/* CTAs */}
+          <div className="mt-8 flex gap-4">
+            <a
+              href="/work"
+              className="inline-block rounded border px-4 py-2 hover:bg-neutral-50"
+            >
+              Work
+            </a>
             <a
               href="/contact"
               className="inline-block rounded border px-4 py-2 hover:bg-neutral-50"
             >
-              Work with me
+              Contact
             </a>
           </div>
         </div>
