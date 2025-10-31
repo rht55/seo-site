@@ -3,11 +3,11 @@ export default function Home() {
     <section className="py-20">
       <div className="max-w-3xl">
         <h1 className="text-4xl md:text-5xl font-semibold leading-tight">
-          Technical SEO —
-          <span className="block text-neutral-500">
-            strategy, systems & clarity.
-          </span>
+          Richard Talbot — Digital Marketing Consultancy &amp; Technical SEO
         </h1>
+        <p className="mt-2 text-lg text-neutral-500">
+          Building organic growth.
+        </p>
 
         <p className="mt-6 text-lg text-neutral-600">
           I’m a technical SEO by trade, but visibility doesn’t end with meta tags.

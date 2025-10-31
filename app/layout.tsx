@@ -8,22 +8,21 @@ export const metadata: Metadata = {
     template: "%s — Rick Talbot",
   },
   description:
-    "Technical SEO, migrations, and growth strategy. Pragmatic, test-driven, and suspicious of shiny nonsense.",
+    "Technical SEO, analytics, and growth strategy. Minimal theatre, maximum outcome.",
   openGraph: {
     type: "website",
     siteName: "Rick Talbot",
-    url: "https://www.richardhtalbot.co.uk",
     title: "Rick Talbot — Technical SEO",
     description:
-      "Technical SEO, migrations, and growth strategy. Pragmatic, test-driven, and suspicious of shiny nonsense.",
+      "Technical SEO, analytics, and growth strategy. Minimal theatre, maximum outcome.",
+    url: "https://www.richardhtalbot.co.uk",
   },
   twitter: {
     card: "summary_large_image",
     title: "Rick Talbot — Technical SEO",
     description:
-      "Technical SEO, migrations, and growth strategy. Pragmatic, test-driven, and suspicious of shiny nonsense.",
+      "Technical SEO, analytics, and growth strategy. Minimal theatre, maximum outcome.",
   },
-  alternates: { canonical: "https://www.richardhtalbot.co.uk" },
 };
 
 function SiteHeader() {
