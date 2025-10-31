@@ -11,9 +11,9 @@ export default function Home() {
 
         <p className="mt-6 text-lg text-neutral-600">
           I’m a technical SEO by trade, but visibility doesn’t end with meta tags.
-          I’m often dropped into the messy middle — analytics, content planning,
-          PR, social, and the operational glue between marketing and engineering.
-          I connect teams, simplify systems, and turn scattered data into direction.
+          I’m often dropped into the messy middle of marketing teams, between analytics, content planning,
+          PR, social, and I become the operational glue between csuite, business owners, marketing and engineering teams.
+        
         </p>
 
         <div className="mt-8 flex gap-3">
