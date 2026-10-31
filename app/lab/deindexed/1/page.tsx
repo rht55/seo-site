@@ -12,7 +12,13 @@ export default function L1S1() {
         "View source (Cmd+Option+U, or Ctrl+U) and read the comments near the top.",
       ]}
     >
-      {/* Previous SEO, last day: I left the audit where the client would never find it. /lab/deindexed/1/audit */}
+      <div
+        aria-hidden
+        dangerouslySetInnerHTML={{
+          __html:
+            "<!-- Previous SEO, last day: I left the audit where the client would never find it. /lab/deindexed/1/audit -->",
+        }}
+      />
       <p>
         Blackwater Coffee Roasters, est. 2009. Four hundred pages, nine years of rankings, a monthly report that said
         green. Then, between one Tuesday and the next, nothing. Not a drop. Gone.
