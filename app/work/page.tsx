@@ -63,10 +63,18 @@ const projects: Project[] = [
     name: "Lil’ Shelf",
     kicker: "Free children’s books online",
     body:
-      "Stories, rhymes and poems from the public domain, read aloud by age and browsable by kind. Free to read, free to keep. A public site plus an installable reading app.",
+      "Stories, rhymes and poems from the public domain, read aloud by age and browsable by kind. Free to read, free to keep. A public site plus a reading app that lives on the home screen, on my phone and on friends’ phones.",
     stack: ["Next.js", "PWA", "Supabase"],
     href: "https://lilshelf.com",
     cta: "lilshelf.com",
+  },
+  {
+    name: "The Beans",
+    kicker: "A kitchen that remembers",
+    body:
+      "Recipes imported from a photo, a screenshot or a link, a fuzzy cupboard that knows roughly what is in, a weekly plan, and a shopping list built from the plan minus what you already have. Lives on the home screen as an app, talks to Alexa, and is in daily use in my house and a few friends’ houses.",
+    stack: ["Next.js", "Supabase", "Claude API", "Alexa skill", "PWA"],
+    status: "In daily use",
   },
   {
     name: "Now Then BMX",
@@ -215,6 +223,7 @@ const skills: { title: string; blurb: string; items: string[] }[] = [
     blurb: "When the tool does not exist, make it.",
     items: [
       "Next.js and TypeScript products, Python pipelines, SQLite and Supabase",
+      "Phone apps as installable PWAs, shared with friends, with no app store in the way",
       "Chrome extensions, cron jobs, launchd automations",
       "Claude API where it earns its place, rules where it does not",
       "Playwright test suites so clients never see the bug",
