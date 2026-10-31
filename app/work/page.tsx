@@ -78,6 +78,14 @@ const projects: Project[] = [
     cta: "nowthenbmx.com",
   },
   {
+    name: "Does truth matter to AI citation?",
+    kicker: "A live experiment",
+    body:
+      "A statistics site built in three arms on one template, launched the same day: real figures from primary UK sources with the source beside every number, derived estimates with the method shown, and seeded invented figures in the gaps no source fills. Pre-registered hypotheses, a private register of every figure, bot logs and AI answers tracked to see which arm gets fetched and which gets cited. Where it lives stays unnamed until the results are in.",
+    stack: ["Python", "Static HTML", "Server logs", "Totally Answers"],
+    status: "In progress",
+  },
+  {
     name: "BTR Capital Radar",
     kicker: "Companies House surveillance",
     body:
