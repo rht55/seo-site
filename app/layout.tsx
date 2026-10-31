@@ -1,84 +1,154 @@
 import "./globals.css";
 import Link from "next/link";
 import Script from "next/script";
-import type { Metadata } from "next";
-import React from "react";
+import type { Metadata, Viewport } from "next";
+import { Geist, Geist_Mono, Instrument_Serif } from "next/font/google";
+import Nav from "../components/Nav";
 
-export const metadata: Metadata = {
-  title: "Richard Talbot — Digital Marketing Consultancy & Technical SEO",
-  description: "Building organic growth.",
-};
+const geist = Geist({ subsets: ["latin"], variable: "--font-geist", display: "swap" });
+const geistMono = Geist_Mono({ subsets: ["latin"], variable: "--font-geist-mono", display: "swap" });
+const instrument = Instrument_Serif({
+  subsets: ["latin"],
+  weight: "400",
+  style: ["normal", "italic"],
+  variable: "--font-instrument",
+  display: "swap",
+});
 
+const SITE_URL = "https://www.richardhtalbot.co.uk";
 const GTM_ID = "GTM-PXJZQC7N";
 
-export default function RootLayout({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export const metadata: Metadata = {
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: "Richard Talbot · Founder of Totally Digital, technical SEO, London",
+    template: "%s · Richard Talbot",
+  },
+  description:
+    "Founder of Totally Digital. Fourteen years in search and ten inside a software development company, working in the gap between strategy and shipping. London.",
+  openGraph: {
+    type: "website",
+    siteName: "Richard Talbot",
+    locale: "en_GB",
+    url: SITE_URL,
+  },
+  twitter: { card: "summary_large_image" },
+  robots: { index: true, follow: true },
+};
+
+export const viewport: Viewport = {
+  themeColor: [
+    { media: "(prefers-color-scheme: light)", color: "#f7f7f5" },
+    { media: "(prefers-color-scheme: dark)", color: "#09090b" },
+  ],
+};
+
+const personJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Richard Talbot",
+  alternateName: "Rick Talbot",
+  url: SITE_URL,
+  image: `${SITE_URL}/richard-talbot.jpg`,
+  jobTitle: "Founder and Director",
+  worksFor: { "@type": "Organization", name: "Totally Digital", url: "https://totally.digital" },
+  address: { "@type": "PostalAddress", addressLocality: "London", addressCountry: "GB" },
+  sameAs: ["https://www.linkedin.com/in/rick-talbot-47525b53", "https://github.com/rht55"],
+  knowsAbout: ["Technical SEO", "Web analytics", "AI search visibility", "Digital PR", "Next.js"],
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
-      <body className="bg-black text-white font-sans">
-        {/* Google Tag Manager Script */}
+    <html lang="en-GB" className={`${geist.variable} ${geistMono.variable} ${instrument.variable}`}>
+      <body className="font-sans">
         <Script
           id="google-tag-manager"
           strategy="afterInteractive"
           dangerouslySetInnerHTML={{
-            __html: `
-              (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-              })(window,document,'script','dataLayer','${GTM_ID}');
-            `,
+            __html: `(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','${GTM_ID}');`,
           }}
         />
-
-        {/* GTM NoScript fallback */}
         <noscript>
           <iframe
             src={`https://www.googletagmanager.com/ns.html?id=${GTM_ID}`}
             height="0"
             width="0"
             style={{ display: "none", visibility: "hidden" }}
-          ></iframe>
+            title="Google Tag Manager"
+          />
         </noscript>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(personJsonLd) }}
+        />
 
-        <header className="border-b border-neutral-800">
-          <nav className="max-w-5xl mx-auto flex items-center justify-between py-4 px-6">
-            {/* Home icon */}
-            <Link href="/" className="text-xl hover:opacity-80" aria-label="Home">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                strokeWidth={1.5}
-                stroke="currentColor"
-                className="w-6 h-6"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h3.75c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
-                />
-              </svg>
+        <a
+          href="#main"
+          className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-[60] focus:rounded-full focus:bg-accent focus:px-4 focus:py-2 focus:text-accent-ink"
+        >
+          Skip to content
+        </a>
+
+        <header className="sticky top-0 z-40 border-b hairline bg-bg/70 backdrop-blur-xl">
+          <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-3 sm:px-8">
+            <Link href="/" className="group flex items-center gap-3" aria-label="Richard Talbot, home">
+              <span className="grid h-8 w-8 place-items-center rounded-lg bg-fg font-mono text-[0.7rem] font-semibold tracking-tight text-bg transition-transform group-hover:-rotate-6">
+                RT
+              </span>
+              <span className="hidden text-sm text-muted transition-colors group-hover:text-fg sm:inline">
+                Richard Talbot
+              </span>
             </Link>
-
-            <div className="flex items-center space-x-6 text-sm">
-              <Link href="/work" className="hover:text-neutral-400">
-                Work
-              </Link>
-              <Link href="/about" className="hover:text-neutral-400">
-                About
-              </Link>
-              <Link href="/contact" className="hover:text-neutral-400">
-                Contact
-              </Link>
-            </div>
-          </nav>
+            <Nav />
+          </div>
         </header>
 
-        <main className="max-w-5xl mx-auto px-6">{children}</main>
+        <main id="main" className="relative mx-auto w-full max-w-6xl px-5 sm:px-8">
+          {children}
+        </main>
+
+        <footer className="mt-24 border-t hairline">
+          <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-12 sm:grid-cols-3 sm:px-8">
+            <div>
+              <p className="font-mono text-sm">Richard Talbot</p>
+              <p className="mt-2 max-w-xs text-sm text-muted">
+                Technical SEO, measurement and the tools that go with them. London, remote friendly.
+              </p>
+            </div>
+            <div className="text-sm">
+              <p className="eyebrow">Around the site</p>
+              <ul className="mt-3 space-y-2">
+                <li><Link className="link-underline" href="/work">Work</Link></li>
+                <li><Link className="link-underline" href="/about">About</Link></li>
+                <li><Link className="link-underline" href="/contact">Contact</Link></li>
+              </ul>
+            </div>
+            <div className="text-sm">
+              <p className="eyebrow">Elsewhere</p>
+              <ul className="mt-3 space-y-2">
+                <li>
+                  <a className="link-underline" href="https://www.linkedin.com/in/rick-talbot-47525b53" rel="noreferrer" target="_blank">
+                    LinkedIn
+                  </a>
+                </li>
+                <li>
+                  <a className="link-underline" href="https://totally.digital" rel="noreferrer" target="_blank">
+                    Totally Digital
+                  </a>
+                </li>
+                <li>
+                  <a className="link-underline" href="https://github.com/rht55/seo-site" rel="noreferrer" target="_blank">
+                    Source of this site
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div className="mx-auto flex w-full max-w-6xl flex-wrap items-center justify-between gap-3 border-t hairline px-5 py-5 font-mono text-[0.7rem] text-muted sm:px-8">
+            <span>© {new Date().getFullYear()} Richard Talbot</span>
+            <span>Next.js 16 · Tailwind 4 · Geist and Instrument Serif · Vercel</span>
+          </div>
+        </footer>
       </body>
     </html>
   );

@@ -1,0 +1,13 @@
+/* TEAM */
+Name: Richard Talbot
+Role: the whole team
+Location: London, UK
+
+/* SITE */
+Stack: Next.js 16, Tailwind 4, Vercel
+Type: Geist, Geist Mono, Instrument Serif
+Last update: 2026-10-31
+
+/* NOTE */
+If you're reading this, you're either a bot, very bored,
+or would like to hire me. In which case, my rate is £1,000,000.
