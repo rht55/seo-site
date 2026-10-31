@@ -114,9 +114,21 @@ export default function SerpMachine() {
             Reset
           </button>
         </div>
-        <p className="mt-6 text-xs text-muted">
-          A mock results page for the query “{QUERY}”. Layouts are illustrative and no real brand is shown; the
-          features and years are real.
+        <p className="mt-6 text-sm text-muted">
+          The shop in the results,{" "}
+          <a
+            href="http://www.thespecialtycoffeecompany.com/"
+            target="_blank"
+            rel="noreferrer"
+            className="link-underline text-fg"
+          >
+            The Specialty Coffee Company
+          </a>
+          , was mine. Watch it get pushed down the page as the years pass. Running it taught me a lot of what I know.
+        </p>
+        <p className="mt-3 text-xs text-muted">
+          A mock results page for the query “{QUERY}”. Layouts are illustrative, the other results are placeholders, and
+          the features and years are real.
         </p>
       </div>
 
@@ -216,9 +228,11 @@ export default function SerpMachine() {
             <section className="space-y-5">
               {organic.map((_, i) => (
                 <div key={i} className="serp-enter">
-                  <p className="text-xs" style={{ color: "var(--serp-url)" }}>www.example-{i + 1}.co.uk › coffee › beans</p>
+                  <p className="text-xs" style={{ color: "var(--serp-url)" }}>
+                    {i === 0 ? "www.thespecialtycoffeecompany.com › coffee-beans" : `www.example-${i}.co.uk › coffee › beans`}
+                  </p>
                   <p className="text-base" style={{ color: "var(--serp-link)" }}>
-                    {["The 10 Best Coffee Beans for Home Brewing", "Best Coffee Beans 2024: Tested and Ranked", "Single Origin vs Blend: Which Beans?", "Coffee Beans Buying Guide", "Top Rated Beans for Espresso", "Where to Buy Fresh Roasted Beans", "Light, Medium or Dark Roast?", "Fairtrade Coffee Beans Explained", "Grind Size and Bean Freshness", "Coffee Bean Storage Tips"][i]}
+                    {["The Specialty Coffee Company · Freshly Roasted Coffee Beans", "Best Coffee Beans 2024: Tested and Ranked", "Single Origin vs Blend: Which Beans?", "Coffee Beans Buying Guide", "Top Rated Beans for Espresso", "Where to Buy Fresh Roasted Beans", "Light, Medium or Dark Roast?", "Fairtrade Coffee Beans Explained", "Grind Size and Bean Freshness", "Coffee Bean Storage Tips"][i]}
                   </p>
                   <div className="serp-skel mt-1.5 w-full" />
                   <div className="serp-skel mt-1 w-4/5" />

@@ -32,7 +32,11 @@ export default function About() {
               diagnostics, and all the quiet details that keep websites stable at scale.
             </p>
             <p>
-              Off-screen: cycling, coffee (ran a mildly successful ecommerce site for a while), running (short distances),
+              Off-screen: cycling, coffee (I ran{" "}
+              <a href="http://www.thespecialtycoffeecompany.com/" target="_blank" rel="noreferrer" className="link-underline">
+                The Specialty Coffee Company
+              </a>
+              , a mildly successful online shop, for a while), running (short distances),
               finance and economics, and an unhealthy interest in how AI is changing the world, from well before it was
               cool. I was emailing Ray Kurzweil at Google in 2011 and reading Superintelligence back in 2018.
             </p>
