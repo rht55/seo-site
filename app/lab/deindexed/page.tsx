@@ -31,8 +31,9 @@ export default function DeindexedHub() {
           </p>
           <p>
             Three levels. Every clue is a real technical defect, built into real HTTP, so curl and devtools work exactly
-            as they would on a client site. The Inspector in the corner works if you would rather stay in the window.
-            Every step has two hints.
+            as they would on a client site. If you would rather stay in the window, the Inspector docked along the bottom
+            of every level page shows you what the browser hides: status, headers, redirect hops, the source as served,
+            and lets you fetch any page as Googlebot. Every step has two hints.
           </p>
         </div>
       </section>
