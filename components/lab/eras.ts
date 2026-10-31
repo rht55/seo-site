@@ -80,7 +80,7 @@ export const eras: Era[] = [
   {
     year: 2012,
     title: "Penguin and the Knowledge Graph",
-    body: "Penguin goes after manipulative links in April. In May the Knowledge Graph puts facts about entities beside the results: things, not strings.",
+    body: "Penguin goes after manipulative links in April. In May the Knowledge Graph puts facts about entities beside the results: things, not strings. It is also the year I started doing SEO.",
     forSeo: "Links can hurt you now, and Google starts answering questions itself.",
     hue: 350,
   },

@@ -27,7 +27,7 @@ export default function Home() {
               <span className="serif-italic text-accent">between</span> strategy and shipping.
             </h1>
             <p className="mt-6 max-w-xl text-lg text-muted">
-              Fourteen years in search and ten inside a software development company taught me the hard part is rarely
+              Search since 2012 and ten years inside a software development company taught me the hard part is rarely
               the idea. It’s the five teams who need to agree, the data nobody trusts and the change nobody owns. That
               middle is where I work.
             </p>
@@ -70,7 +70,7 @@ export default function Home() {
       <section className="reveal mt-20 grid gap-4 sm:grid-cols-3">
         {[
           ["Founder", "and director of Totally Digital, London"],
-          ["14+", "years in SEO, in all its forms"],
+          ["Since 2012", "in SEO, in all its forms"],
           ["10+", "years inside a software development company"],
         ].map(([big, small]) => (
           <div key={big} className="rounded-2xl border hairline p-5">

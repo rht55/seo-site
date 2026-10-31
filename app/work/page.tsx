@@ -406,7 +406,7 @@ export default function WorkPage() {
             What I <span className="serif-italic">actually</span> do.
           </>
         }
-        intro="Fourteen-plus years of it, from agency floors to the director’s chair, and still in the crawl files."
+        intro="Since 2012, from agency floors to the founder’s chair, and still in the crawl files."
       >
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {skills.map((s, i) => (

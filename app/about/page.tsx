@@ -4,7 +4,7 @@ import Link from "next/link";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Rick Talbot: founder and director of Totally Digital, fourteen years in SEO and ten inside a software development company. Cycling, coffee, finance and an early interest in AI.",
+    "Rick Talbot: founder and director of Totally Digital, in SEO since 2012 and ten years inside a software development company. Cycling, coffee, finance and an early interest in AI.",
   alternates: { canonical: "/about" },
 };
 
@@ -21,7 +21,7 @@ export default function About() {
           <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted">
             <p>
               I’m Rick, founder and director of Totally Digital, and have been an SEO in all the different forms that
-              takes for over 14 years. I also spent ten-plus years inside a software development company, so engineering
+              takes since 2012. I also spent ten-plus years inside a software development company, so engineering
               is a room I’m comfortable in rather than a department I hand things to. I’ve spent those years building search growth for B2C and B2B brands, the kind measured in revenue,
               not PowerPoints. I bridge product, marketing and engineering, translate constraints, and take the guesswork
               out of complex changes.
@@ -68,8 +68,8 @@ export default function About() {
               <dd className="mt-1">London, remote friendly</dd>
             </div>
             <div>
-              <dt className="eyebrow">Years in SEO</dt>
-              <dd className="mt-1">14 and counting</dd>
+              <dt className="eyebrow">In SEO since</dt>
+              <dd className="mt-1">2012, fourteen years and counting</dd>
             </div>
             <div>
               <dt className="eyebrow">Years in software</dt>

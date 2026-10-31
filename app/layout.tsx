@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     template: "%s · Richard Talbot",
   },
   description:
-    "Founder of Totally Digital. Fourteen years in search and ten inside a software development company, working in the gap between strategy and shipping. London.",
+    "Founder of Totally Digital. In search since 2012 and ten years inside a software development company, working in the gap between strategy and shipping. London.",
   openGraph: {
     type: "website",
     siteName: "Richard Talbot",
