@@ -16,6 +16,13 @@ const pieces = [
     note: "Scroll from Archie to AI answers, drag a results page through 28 years, then take the quiz.",
     tags: ["Scroll-driven", "Interactive", "Quiz"],
   },
+  {
+    href: "/lab/deindexed",
+    n: "02",
+    title: "Deindexed",
+    note: "A site has vanished from Google. Three levels of real technical defects to find, with an inspector in the window and hints when you need them.",
+    tags: ["Puzzle", "Technical SEO", "Real HTTP"],
+  },
 ];
 
 export default function LabPage() {
