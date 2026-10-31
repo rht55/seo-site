@@ -148,11 +148,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                     Totally Digital
                   </a>
                 </li>
-                <li>
-                  <a className="link-underline" href="https://github.com/rht55/seo-site" rel="noreferrer" target="_blank">
-                    Source of this site
-                  </a>
-                </li>
               </ul>
             </div>
           </div>
