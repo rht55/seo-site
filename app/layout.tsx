@@ -130,6 +130,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <p className="eyebrow">Around the site</p>
               <ul className="mt-3 space-y-2">
                 <li><Link className="link-underline" href="/work">Work</Link></li>
+                <li><Link className="link-underline" href="/lab">Lab</Link></li>
                 <li><Link className="link-underline" href="/about">About</Link></li>
                 <li><Link className="link-underline" href="/contact">Contact</Link></li>
               </ul>

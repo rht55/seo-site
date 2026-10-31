@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 const featured = [
   { href: "/work#built", title: "Totally Answers", note: "AI answer tracking for PR agencies" },
   { href: "/work#built", title: "ONS business demography", note: "Six charts and a council lookup from the raw tables" },
-  { href: "/work#receipts", title: "Receipts", note: "Case-study numbers with their sources" },
+  { href: "/lab/search-history", title: "A short history of search", note: "Scroll it, drag it, get quizzed on it" },
 ];
 
 export default function Home() {
