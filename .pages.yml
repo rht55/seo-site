@@ -1,0 +1,323 @@
+# Pages CMS configuration (app.pagescms.org). Edit copy here, never in the code.
+media:
+  input: public/images
+  output: /images
+  categories: [image]
+
+settings:
+  content:
+    merge: true
+  commit:
+    identity: user
+    templates:
+      update: "Content: update {filename} (via Pages CMS)"
+      create: "Content: add {filename} (via Pages CMS)"
+
+content:
+  - name: home
+    label: Home page
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - name: eyebrow
+        label: Small line above the headline
+        type: string
+      - name: headline
+        label: Headline
+        type: string
+        description: "Wrap the word that should be italic and green in {curly braces}."
+      - name: intro
+        label: Intro paragraphs
+        type: text
+        list: true
+      - name: primaryCta
+        label: Black button
+        type: string
+      - name: secondaryCta
+        label: Outline button
+        type: string
+      - name: photoAlt
+        label: Photo description (for screen readers)
+        type: string
+      - name: sticker
+        label: Sticker on the photo
+        type: string
+      - name: tiles
+        label: Three fact tiles
+        type: object
+        list:
+          min: 3
+          max: 3
+          collapsible:
+            summary: "{big}"
+        fields:
+          - name: big
+            label: Big text
+            type: string
+          - name: small
+            label: Small text
+            type: string
+      - name: recentHeading
+        label: Heading above the three cards
+        type: string
+      - name: featured
+        label: Three cards
+        type: object
+        list:
+          min: 3
+          max: 3
+          collapsible:
+            summary: "{title}"
+        fields:
+          - name: title
+            type: string
+          - name: note
+            type: string
+          - name: href
+            label: Link (path on this site, like /work#built)
+            type: string
+
+  - name: about
+    label: About page
+    type: file
+    path: content/about.json
+    format: json
+    fields:
+      - name: headline
+        type: string
+        description: "Wrap the italic word in {curly braces}."
+      - name: paragraphs
+        label: Paragraphs
+        type: text
+        list: true
+        description: "A link is written as [the words](https://the-url)."
+      - name: facts
+        label: Side panel facts
+        type: object
+        list:
+          collapsible:
+            summary: "{label}"
+        fields:
+          - name: label
+            type: string
+          - name: value
+            type: string
+      - name: primaryCta
+        label: Black button
+        type: string
+      - name: secondaryCta
+        label: Outline button
+        type: string
+      - name: description
+        label: Search result description
+        type: text
+
+  - name: work
+    label: Work page
+    type: file
+    path: content/work.json
+    format: json
+    fields:
+      - name: hero
+        label: Top of page
+        type: object
+        fields:
+          - name: eyebrow
+            type: string
+          - name: headline
+            type: string
+            description: "Wrap the italic word in {curly braces}."
+          - name: intro
+            type: text
+      - name: projects
+        label: Built (project cards)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            type: string
+          - name: kicker
+            label: Small line above the name
+            type: string
+          - name: body
+            type: text
+          - name: stack
+            label: Stack tags
+            type: string
+            list: true
+          - name: href
+            label: Link (leave empty for none)
+            type: string
+          - name: cta
+            label: Link text
+            type: string
+          - name: status
+            label: Status badge (leave empty for none)
+            type: string
+          - name: wide
+            label: Double-width card
+            type: boolean
+      - name: smallThings
+        label: The small stuff
+        type: object
+        list:
+          collapsible:
+            summary: "{name}"
+        fields:
+          - name: name
+            type: string
+          - name: what
+            type: text
+      - name: receipts
+        label: Receipts (case study results)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{client}"
+        fields:
+          - name: client
+            type: string
+          - name: what
+            type: text
+          - name: href
+            label: Case study link
+            type: string
+          - name: figures
+            type: object
+            list:
+              collapsible:
+                summary: "{label}"
+            fields:
+              - name: to
+                label: Number
+                type: number
+              - name: prefix
+                label: Prefix (like +)
+                type: string
+              - name: suffix
+                label: Suffix (like % or M)
+                type: string
+              - name: decimals
+                type: number
+              - name: label
+                type: string
+      - name: skills
+        label: The SEO bit (skill groups)
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{title}"
+        fields:
+          - name: title
+            type: string
+          - name: blurb
+            type: string
+          - name: items
+            type: string
+            list: true
+      - name: toolsRowA
+        label: Toolbox, top row
+        type: string
+        list: true
+      - name: toolsRowB
+        label: Toolbox, bottom row
+        type: string
+        list: true
+      - name: clients
+        label: Client names
+        type: string
+        list: true
+      - name: cta
+        label: Bottom call to action
+        type: object
+        fields:
+          - name: headline
+            type: string
+          - name: body
+            type: text
+          - name: primary
+            type: string
+          - name: secondary
+            type: string
+      - name: description
+        label: Search result description
+        type: text
+
+  - name: lab
+    label: Lab index
+    type: file
+    path: content/lab.json
+    format: json
+    fields:
+      - name: headline
+        type: string
+      - name: intro
+        type: text
+      - name: pieces
+        label: Pieces
+        type: object
+        list:
+          collapsible:
+            summary: "{title}"
+        fields:
+          - name: n
+            label: Number (01, 02…)
+            type: string
+          - name: title
+            type: string
+          - name: note
+            type: text
+          - name: href
+            label: Link
+            type: string
+          - name: tags
+            type: string
+            list: true
+      - name: description
+        label: Search result description
+        type: text
+
+  - name: contact
+    label: Contact page
+    type: file
+    path: content/contact.json
+    format: json
+    fields:
+      - name: headline
+        type: string
+      - name: intro
+        type: text
+      - name: emailNote
+        type: string
+      - name: linkedinNote
+        type: string
+      - name: description
+        label: Search result description
+        type: text
+
+  - name: site
+    label: Site settings
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: title
+        label: Browser title
+        type: string
+      - name: description
+        label: Default search result description
+        type: text
+      - name: footerBlurb
+        type: text
+      - name: email
+        type: string
+      - name: linkedinUrl
+        type: string
+      - name: linkedinLabel
+        type: string

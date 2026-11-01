@@ -1,41 +1,26 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import Spotlight from "../../components/Spotlight";
+import { Accent } from "../../components/Inline";
+import lab from "../../content/lab.json";
+import type { Piece } from "../../content/types";
 
 export const metadata: Metadata = {
-  title: "Lab",
-  description: "Interactive pieces built to test ideas and show the working. First up: a history of search you can scroll, drag and be quizzed on.",
+  title: lab.title,
+  description: lab.description,
   alternates: { canonical: "/lab" },
 };
 
-const pieces = [
-  {
-    href: "/lab/search-history",
-    n: "01",
-    title: "A short history of search",
-    note: "Scroll from Archie to AI answers, drag a results page through 28 years, then take the quiz.",
-    tags: ["Scroll-driven", "Interactive", "Quiz"],
-  },
-  {
-    href: "/lab/deindexed",
-    n: "02",
-    title: "Deindexed",
-    note: "A site has vanished from Google. Three levels of real technical defects to find, with an inspector in the window and hints when you need them.",
-    tags: ["Puzzle", "Technical SEO", "Real HTTP"],
-  },
-];
-
 export default function LabPage() {
+  const pieces = lab.pieces as Piece[];
   return (
     <section className="relative pt-16 sm:pt-24">
       <div className="glow" aria-hidden />
-      <p className="eyebrow">Lab</p>
+      <p className="eyebrow">{lab.title}</p>
       <h1 className="mt-4 max-w-3xl text-5xl font-semibold leading-[1.02] sm:text-6xl">
-        Things built to <span className="serif-italic text-accent">play</span> with.
+        <Accent text={lab.headline} />
       </h1>
-      <p className="mt-6 max-w-xl text-lg text-muted">
-        A playground for ideas, interfaces and the odd bit of showing off. Each piece is small, finished and real.
-      </p>
+      <p className="mt-6 max-w-xl text-lg text-muted">{lab.intro}</p>
       <ul className="mt-12 grid gap-4 md:grid-cols-2">
         {pieces.map((p) => (
           <Spotlight key={p.href} as="li" className="rounded-2xl">

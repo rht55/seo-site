@@ -4,6 +4,7 @@ import Script from "next/script";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import Nav from "../components/Nav";
+import site from "../content/site.json";
 
 const geist = localFont({
   src: "./fonts/geist-latin.woff2",
@@ -32,11 +33,10 @@ const GTM_ID = "GTM-PXJZQC7N";
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default: "Richard Talbot · Founder of Totally Digital, technical SEO, London",
+    default: site.title,
     template: "%s · Richard Talbot",
   },
-  description:
-    "Founder of Totally Digital. In search since 2012 and ten years inside a software development company, working in the gap between strategy and shipping. London.",
+  description: site.description,
   openGraph: {
     type: "website",
     siteName: "Richard Talbot",
@@ -122,9 +122,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
           <div className="mx-auto grid w-full max-w-6xl gap-10 px-5 py-12 sm:grid-cols-3 sm:px-8">
             <div>
               <p className="font-mono text-sm">Richard Talbot</p>
-              <p className="mt-2 max-w-xs text-sm text-muted">
-                Technical SEO, measurement and the tools that go with them. London, remote friendly.
-              </p>
+              <p className="mt-2 max-w-xs text-sm text-muted">{site.footerBlurb}</p>
             </div>
             <div className="text-sm">
               <p className="eyebrow">Around the site</p>
@@ -139,7 +137,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               <p className="eyebrow">Elsewhere</p>
               <ul className="mt-3 space-y-2">
                 <li>
-                  <a className="link-underline" href="https://www.linkedin.com/in/rick-talbot-47525b53" rel="noreferrer" target="_blank">
+                  <a className="link-underline" href={site.linkedinUrl} rel="noreferrer" target="_blank">
                     LinkedIn
                   </a>
                 </li>

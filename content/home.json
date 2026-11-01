@@ -1,0 +1,23 @@
+{
+  "eyebrow": "Richard Talbot · London",
+  "headline": "I’m Rick. I founded Totally Digital and I work in the gap {between} strategy and shipping.",
+  "intro": [
+    "Search since 2012 and ten years inside a software development company taught me the hard part is rarely the idea. It’s the five teams who need to agree, the data nobody trusts and the change nobody owns. That middle is where I work.",
+    "Technical enough to read the code and the logs, commercial enough to defend the priority to a board. I make the trade-offs visible, get the thing over the line, and measure whether it worked."
+  ],
+  "primaryCta": "See the work",
+  "secondaryCta": "Get in touch",
+  "photoAlt": "Richard Talbot in a dinner suit, sitting under a parasol",
+  "sticker": "Not just an SEO",
+  "tiles": [
+    { "big": "Founder", "small": "and director of Totally Digital, London" },
+    { "big": "Since 2012", "small": "in SEO, in all its forms" },
+    { "big": "10+", "small": "years inside a software development company" }
+  ],
+  "recentHeading": "Three places to start",
+  "featured": [
+    { "href": "/work#built", "title": "Totally Answers", "note": "AI answer tracking for PR agencies" },
+    { "href": "/work#built", "title": "ONS business demography", "note": "Six charts and a council lookup from the raw tables" },
+    { "href": "/lab/search-history", "title": "A short history of search", "note": "Scroll it, drag it, get quizzed on it" }
+  ]
+}
