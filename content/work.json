@@ -63,6 +63,33 @@
       "wide": true
     },
     {
+      "name": "totally.digital/data",
+      "kicker": "Public data, charted and kept current",
+      "body": "A data journalism section for the agency, built and published in a day. A&E waits by hospital, ambulance response times by service, pay by council area set against house prices, business openings and closures, and private rents by area, each from the primary NHS England or ONS release with the method on the page. The ambulance piece picks up where Totally's 2015 FOI postcode map, covered by the Guardian Datablog, left off.",
+      "stack": [
+        "NHS England",
+        "ONS",
+        "SVG",
+        "Vanilla JS",
+        "WordPress REST"
+      ],
+      "href": "https://totally.digital/data/",
+      "cta": "totally.digital/data",
+      "wide": false
+    },
+    {
+      "name": "Release watcher",
+      "kicker": "The charts update themselves",
+      "body": "A scheduled job that reads the NHS England and ONS release pages, one request at a time, spots a new edition, rebuilds the affected piece in a staging copy, checks it, re-renders the images and only then promotes it. A second script updates the live pages over the WordPress API, hub last, and clears the cache. It runs to the release calendar rather than a guess: NHS on the second Thursday, ONS on its own Wednesdays.",
+      "stack": [
+        "Python",
+        "Scheduled runs",
+        "WordPress REST"
+      ],
+      "status": "Running weekly",
+      "wide": false
+    },
+    {
       "name": "Labrador",
       "kicker": "Chrome extension",
       "body": "Captures real chatgpt.com answers and the sources they cite to CSV, then pushes them into Totally Answers. The thing the API will never show you: what a signed-in human actually sees.",
@@ -73,6 +100,18 @@
       "wide": false
     },
     {
+      "name": "Monthly AI answer reports",
+      "kicker": "Eight clients, one builder, drafts on the first",
+      "body": "The PR-led AI answer report, built once for every client instead of by hand each time: where the client is included, the pages the answers draw on, the targets and the fixes. A decisions file per client carries every judgement forward so a month never quietly reverses one, and an independent check reads each draft before it lands in the client's Drive folder for review.",
+      "stack": [
+        "Python",
+        "Totally Answers API",
+        "Google Drive"
+      ],
+      "status": "Running monthly",
+      "wide": false
+    },
+    {
       "name": "Does truth matter to AI citation?",
       "kicker": "A live experiment",
       "body": "A statistics site built in three arms on one template: real figures from primary UK sources with the source beside every number, derived estimates with the method shown, and seeded invented figures in the gaps no source fills. Pre-registered hypotheses, a private register of every figure, bot logs and AI answers tracked to see which arm gets fetched and which gets cited. Where it lives stays unnamed until the results are in.",
@@ -80,6 +119,19 @@
         "Python",
         "Static HTML",
         "Server logs",
+        "Totally Answers"
+      ],
+      "status": "In progress",
+      "wide": false
+    },
+    {
+      "name": "Would an AI quote a parody bank?",
+      "kicker": "A second live experiment",
+      "body": "An anonymous reviewer rates the big investment banks and twenty-two private banks on terms, fees and service. Every figure about a real bank is sourced and dated, with the cheapest and dearest called out above each table. Beside them sits a panel of six invented banks with their own fingerprinted terms, visibly apart, so the answers engines can be watched for the day one of them turns up as fact. Satire in the desk notes, none in the numbers. Unnamed until the results are in.",
+      "stack": [
+        "Python",
+        "Static HTML",
+        "Cloudflare Pages",
         "Totally Answers"
       ],
       "status": "In progress",
