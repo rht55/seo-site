@@ -102,7 +102,7 @@
     {
       "name": "Client dashboards",
       "kicker": "One template, one config per client",
-      "body": "A monorepo that renders a password-protected dashboard for every client from a small JSON file. Search Console, GA4, rank tracking and AI answers on one page. Improve the template once and every client gets it.",
+      "body": "A monorepo that renders a password-protected dashboard for every client. All client data on one page. Improve the template once and every client gets it.",
       "stack": [
         "Python",
         "Vercel",
