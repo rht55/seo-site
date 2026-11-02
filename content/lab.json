@@ -5,18 +5,26 @@
   "intro": "A playground for ideas, interfaces and the odd bit of showing off. Each piece is small, finished and real.",
   "pieces": [
     {
-      "href": "/lab/search-history",
       "n": "01",
       "title": "A short history of search",
       "note": "Scroll from Archie to AI answers, drag a results page through 28 years, then take the quiz.",
-      "tags": ["Scroll-driven", "Interactive", "Quiz"]
+      "href": "/lab/search-history",
+      "tags": [
+        "Scroll-driven",
+        "Interactive",
+        "Quiz"
+      ]
     },
     {
-      "href": "/lab/deindexed",
       "n": "02",
       "title": "Deindexed",
-      "note": "A site has vanished from Google. Three levels of real technical defects to find, with an inspector in the window and hints when you need them.",
-      "tags": ["Puzzle", "Technical SEO", "Real HTTP"]
+      "note": "Experiment quiz. Three levels of real technical defects to find, with an inspector in the window and hints when you need them.",
+      "href": "/lab/deindexed",
+      "tags": [
+        "Puzzle",
+        "Technical SEO",
+        "Real HTTP"
+      ]
     }
   ]
 }
