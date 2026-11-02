@@ -116,7 +116,7 @@
     {
       "name": "The Beans",
       "kicker": "A kitchen that remembers",
-      "body": "Recipes imported from a photo, a screenshot or a link, a fuzzy cupboard that knows roughly what is in, a weekly plan, and a shopping list built from the plan minus what you already have. Lives on the home screen as an app, talks to Alexa, and is in daily use in my house and a few friends’ houses.",
+      "body": "Recipes imported from a photo, a screenshot or a link, a fuzzy cupboard that knows roughly what is in, a weekly plan, and a shopping list built from the plan minus what you already have. Lives on the home screen as an app, hooked up to Alexa so I can speak to my app; is in daily use in my house and a few friends’ houses.",
       "stack": [
         "Next.js",
         "Supabase",
