@@ -4,6 +4,7 @@ import Script from "next/script";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import Nav from "../components/Nav";
+import HomeLink from "../components/HomeLink";
 import { site } from "../content";
 
 const geist = localFont({
@@ -70,7 +71,7 @@ const personJsonLd = {
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en-GB" className={`${geist.variable} ${geistMono.variable} ${instrument.variable}`}>
+    <html lang="en-GB" data-scroll-behavior="smooth" className={`${geist.variable} ${geistMono.variable} ${instrument.variable}`}>
       <body className="font-sans">
         <Script
           id="google-tag-manager"
@@ -102,14 +103,14 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         <header className="sticky top-0 z-40 border-b hairline bg-bg/70 backdrop-blur-xl">
           <div className="mx-auto flex w-full max-w-6xl items-center justify-between px-5 py-3 sm:px-8">
-            <Link href="/" className="group flex items-center gap-3" aria-label="Richard Talbot, home">
+            <HomeLink className="group flex items-center gap-3">
               <span className="grid h-8 w-8 place-items-center rounded-lg bg-fg font-mono text-[0.7rem] font-semibold tracking-tight text-bg transition-transform group-hover:-rotate-6">
                 RT
               </span>
               <span className="hidden text-sm text-muted transition-colors group-hover:text-fg sm:inline">
                 Richard Talbot
               </span>
-            </Link>
+            </HomeLink>
             <Nav />
           </div>
         </header>
