@@ -35,6 +35,19 @@
   },
   "projects": [
     {
+      "name": "Lil’ Shelf",
+      "kicker": "Free children’s books online",
+      "body": "Stories, rhymes and poems from the public domain, read aloud by age and browsable by kind. Free to read, free to keep. A public site plus a reading app that lives on the home screen, on my phone and on friends’ phones.",
+      "stack": [
+        "Next.js",
+        "PWA",
+        "Supabase"
+      ],
+      "href": "https://lilshelf.com",
+      "cta": "lilshelf.com",
+      "wide": false
+    },
+    {
       "name": "Totally Answers",
       "kicker": "AI answer tracking for PR agencies",
       "body": "Which questions ChatGPT, Gemini and Perplexity answer with a client in them, which sources those answers lean on, and what to do about it. Built as the product behind a managed service: question baskets, daily checks, source classification, insight cards, and a report an agency can hand to its client.",
@@ -50,67 +63,27 @@
       "wide": true
     },
     {
-      "name": "Client dashboards",
-      "kicker": "One template, one config per client",
-      "body": "A monorepo that renders a password-protected dashboard for every client from a small JSON file. Search Console, GA4, rank tracking and AI answers on one page. Improve the template once and every client gets it.",
+      "name": "Labrador",
+      "kicker": "Chrome extension",
+      "body": "Captures real chatgpt.com answers and the sources they cite to CSV, then pushes them into Totally Answers. The thing the API will never show you: what a signed-in human actually sees.",
+      "stack": [
+        "Chrome MV3",
+        "TypeScript"
+      ],
+      "wide": false
+    },
+    {
+      "name": "Does truth matter to AI citation?",
+      "kicker": "A live experiment",
+      "body": "A statistics site built in three arms on one template, launched the same day: real figures from primary UK sources with the source beside every number, derived estimates with the method shown, and seeded invented figures in the gaps no source fills. Pre-registered hypotheses, a private register of every figure, bot logs and AI answers tracked to see which arm gets fetched and which gets cited. Where it lives stays unnamed until the results are in.",
       "stack": [
         "Python",
-        "Vercel",
-        "GSC API",
-        "GA4"
+        "Static HTML",
+        "Server logs",
+        "Totally Answers"
       ],
-      "href": "https://dashboards.totally.digital",
-      "cta": "dashboards.totally.digital"
-    },
-    {
-      "name": "ONS business demography, visualised",
-      "kicker": "Data journalism for a PR campaign",
-      "body": "Six charts and a council-area lookup of business openings and closures across the UK, 2019 to 2024, built straight from the ONS tables for 365 Finance. Self-contained HTML, no libraries, light and dark, embeddable by any outlet that covers the story.",
-      "stack": [
-        "ONS data",
-        "SVG",
-        "Vanilla JS",
-        "Python"
-      ],
-      "href": "https://www.365finance.co.uk/business-births-and-deaths/",
-      "cta": "See it live"
-    },
-    {
-      "name": "Ginapper",
-      "kicker": "Gin ratings, serves and bars",
-      "body": "Rate the pour, not just the bottle. 155+ gins, classic cocktails and UK gin bars on the public site, and an app for logging serves and finding the pairing that sings.",
-      "stack": [
-        "Next.js",
-        "Supabase",
-        "Vercel"
-      ],
-      "href": "https://ginapper.com",
-      "cta": "ginapper.com"
-    },
-    {
-      "name": "Lil’ Shelf",
-      "kicker": "Free children’s books online",
-      "body": "Stories, rhymes and poems from the public domain, read aloud by age and browsable by kind. Free to read, free to keep. A public site plus a reading app that lives on the home screen, on my phone and on friends’ phones.",
-      "stack": [
-        "Next.js",
-        "PWA",
-        "Supabase"
-      ],
-      "href": "https://lilshelf.com",
-      "cta": "lilshelf.com"
-    },
-    {
-      "name": "The Beans",
-      "kicker": "A kitchen that remembers",
-      "body": "Recipes imported from a photo, a screenshot or a link, a fuzzy cupboard that knows roughly what is in, a weekly plan, and a shopping list built from the plan minus what you already have. Lives on the home screen as an app, talks to Alexa, and is in daily use in my house and a few friends’ houses.",
-      "stack": [
-        "Next.js",
-        "Supabase",
-        "Claude API",
-        "Alexa skill",
-        "PWA"
-      ],
-      "status": "In daily use"
+      "status": "In progress",
+      "wide": false
     },
     {
       "name": "Now Then BMX",
@@ -123,19 +96,63 @@
         "Cloudflare"
       ],
       "href": "https://nowthenbmx.com",
-      "cta": "nowthenbmx.com"
+      "cta": "nowthenbmx.com",
+      "wide": false
     },
     {
-      "name": "Does truth matter to AI citation?",
-      "kicker": "A live experiment",
-      "body": "A statistics site built in three arms on one template, launched the same day: real figures from primary UK sources with the source beside every number, derived estimates with the method shown, and seeded invented figures in the gaps no source fills. Pre-registered hypotheses, a private register of every figure, bot logs and AI answers tracked to see which arm gets fetched and which gets cited. Where it lives stays unnamed until the results are in.",
+      "name": "Client dashboards",
+      "kicker": "One template, one config per client",
+      "body": "A monorepo that renders a password-protected dashboard for every client from a small JSON file. Search Console, GA4, rank tracking and AI answers on one page. Improve the template once and every client gets it.",
       "stack": [
         "Python",
-        "Static HTML",
-        "Server logs",
-        "Totally Answers"
+        "Vercel",
+        "GSC API",
+        "GA4"
       ],
-      "status": "In progress"
+      "href": "https://dashboards.totally.digital",
+      "cta": "dashboards.totally.digital",
+      "wide": false
+    },
+    {
+      "name": "The Beans",
+      "kicker": "A kitchen that remembers",
+      "body": "Recipes imported from a photo, a screenshot or a link, a fuzzy cupboard that knows roughly what is in, a weekly plan, and a shopping list built from the plan minus what you already have. Lives on the home screen as an app, talks to Alexa, and is in daily use in my house and a few friends’ houses.",
+      "stack": [
+        "Next.js",
+        "Supabase",
+        "Claude API",
+        "Alexa skill",
+        "PWA"
+      ],
+      "status": "In daily use",
+      "wide": false
+    },
+    {
+      "name": "Ginapper",
+      "kicker": "Gin ratings, serves and bars",
+      "body": "Rate the pour, not just the bottle. 155+ gins, classic cocktails and UK gin bars on the public site, and an app for logging serves and finding the pairing that sings.",
+      "stack": [
+        "Next.js",
+        "Supabase",
+        "Vercel"
+      ],
+      "href": "https://ginapper.com",
+      "cta": "ginapper.com",
+      "wide": false
+    },
+    {
+      "name": "ONS business demography, visualised",
+      "kicker": "Data journalism for a PR campaign",
+      "body": "Six charts and a council-area lookup of business openings and closures across the UK, 2019 to 2024, built straight from the ONS tables for 365 Finance. Self-contained HTML, no libraries, light and dark, embeddable by any outlet that covers the story.",
+      "stack": [
+        "ONS data",
+        "SVG",
+        "Vanilla JS",
+        "Python"
+      ],
+      "href": "https://www.365finance.co.uk/business-births-and-deaths/",
+      "cta": "See it live",
+      "wide": false
     },
     {
       "name": "BTR Capital Radar",
@@ -145,7 +162,8 @@
         "Next.js",
         "Companies House API",
         "Claude API"
-      ]
+      ],
+      "wide": false
     },
     {
       "name": "Deckhand",
@@ -156,16 +174,8 @@
         "Supabase",
         "Claude API"
       ],
-      "status": "Pilot"
-    },
-    {
-      "name": "Labrador",
-      "kicker": "Chrome extension",
-      "body": "Captures real chatgpt.com answers and the sources they cite to CSV, then pushes them into Totally Answers. The thing the API will never show you: what a signed-in human actually sees.",
-      "stack": [
-        "Chrome MV3",
-        "TypeScript"
-      ]
+      "status": "Pilot",
+      "wide": false
     }
   ],
   "smallThingsHeading": "And the small stuff",
@@ -176,11 +186,11 @@
     },
     {
       "name": "PMax Asset Studio",
-      "what": "Turns a brand’s real images into every Performance Max ratio with copy, logo and colours."
+      "what": "Programatically, turns a brand’s real images into Performance Max ratio with copy, logo and colours."
     },
     {
       "name": "Raw Search Console pulls",
-      "what": "A script that pulls query by page by country by day straight from the API in a minute, before any tool gets a say."
+      "what": "Datawarehousing script that pulls query by page by country by day straight from the API in a minute, before any tool gets a say. Historical querying of SC data that would otherwise be lost. "
     },
     {
       "name": "Domain and uptime watch",
