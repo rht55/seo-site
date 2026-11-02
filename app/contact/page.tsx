@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Spotlight from "../../components/Spotlight";
 import { Accent } from "../../components/Inline";
-import contact from "../../content/contact.json";
-import site from "../../content/site.json";
+import { contact, site } from "../../content";
 
 export const metadata: Metadata = {
   title: contact.title,

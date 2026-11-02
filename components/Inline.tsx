@@ -4,8 +4,8 @@ import React from "react";
  * Renders a line of copy from the content files.
  * {word} becomes the italic serif accent; [text](url) becomes a link.
  */
-export function Accent({ text, color = true }: { text: string; color?: boolean }) {
-  const parts = text.split(/(\{[^}]+\})/g);
+export function Accent({ text, color = true }: { text?: string; color?: boolean }) {
+  const parts = (text ?? "").split(/(\{[^}]+\})/g);
   return (
     <>
       {parts.map((p, i) =>
@@ -21,8 +21,8 @@ export function Accent({ text, color = true }: { text: string; color?: boolean }
   );
 }
 
-export function Prose({ text }: { text: string }) {
-  const parts = text.split(/(\[[^\]]+\]\([^)]+\))/g);
+export function Prose({ text }: { text?: string }) {
+  const parts = (text ?? "").split(/(\[[^\]]+\]\([^)]+\))/g);
   return (
     <>
       {parts.map((p, i) => {

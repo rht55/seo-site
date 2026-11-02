@@ -1,12 +1,13 @@
 type Props = {
-  items: string[];
+  items?: string[];
   reverse?: boolean;
   duration?: string;
 };
 
 /** Pure CSS marquee. The list is rendered twice so the loop is seamless. */
 export default function Marquee({ items, reverse = false, duration = "48s" }: Props) {
-  const row = [...items, ...items];
+  const list = items ?? [];
+  const row = [...list, ...list];
   return (
     <div className="marquee py-1" aria-hidden={reverse ? true : undefined}>
       <div

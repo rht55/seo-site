@@ -4,7 +4,7 @@ import Script from "next/script";
 import type { Metadata, Viewport } from "next";
 import localFont from "next/font/local";
 import Nav from "../components/Nav";
-import site from "../content/site.json";
+import { site } from "../content";
 
 const geist = localFont({
   src: "./fonts/geist-latin.woff2",

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { Accent, Prose } from "../../components/Inline";
-import about from "../../content/about.json";
-import site from "../../content/site.json";
+import { about, site } from "../../content";
 import type { Fact } from "../../content/types";
 
 export const metadata: Metadata = {
@@ -12,7 +11,7 @@ export const metadata: Metadata = {
 };
 
 export default function About() {
-  const facts = about.facts as Fact[];
+  const facts: Fact[] = about.facts ?? [];
   return (
     <section className="relative pt-16 sm:pt-24">
       <div className="glow" aria-hidden />
@@ -23,7 +22,7 @@ export default function About() {
             <Accent text={about.headline} />
           </h1>
           <div className="mt-8 space-y-5 text-lg leading-relaxed text-muted">
-            {about.paragraphs.map((p) => (
+            {(about.paragraphs ?? []).map((p) => (
               <p key={p.slice(0, 40)}>
                 <Prose text={p} />
               </p>

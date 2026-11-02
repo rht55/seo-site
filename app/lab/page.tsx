@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import Link from "next/link";
 import Spotlight from "../../components/Spotlight";
 import { Accent } from "../../components/Inline";
-import lab from "../../content/lab.json";
+import { lab } from "../../content";
 import type { Piece } from "../../content/types";
 
 export const metadata: Metadata = {
@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 };
 
 export default function LabPage() {
-  const pieces = lab.pieces as Piece[];
+  const pieces: Piece[] = lab.pieces ?? [];
   return (
     <section className="relative pt-16 sm:pt-24">
       <div className="glow" aria-hidden />

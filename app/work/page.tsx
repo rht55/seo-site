@@ -4,7 +4,7 @@ import Spotlight from "../../components/Spotlight";
 import CountUp from "../../components/CountUp";
 import Marquee from "../../components/Marquee";
 import { Accent } from "../../components/Inline";
-import work from "../../content/work.json";
+import { work } from "../../content";
 import type { Project, Receipt, Skill, SmallThing, IndexItem } from "../../content/types";
 
 export const metadata: Metadata = {
@@ -13,11 +13,11 @@ export const metadata: Metadata = {
   alternates: { canonical: "/work" },
 };
 
-const projects = work.projects as Project[];
-const smallThings = work.smallThings as SmallThing[];
-const receipts = work.receipts as Receipt[];
-const skills = work.skills as Skill[];
-const index = work.index as IndexItem[];
+const projects: Project[] = work.projects ?? [];
+const smallThings: SmallThing[] = work.smallThings ?? [];
+const receipts: Receipt[] = work.receipts ?? [];
+const skills: Skill[] = work.skills ?? [];
+const index: IndexItem[] = work.index ?? [];
 
 function Section({
   id,
@@ -188,7 +188,7 @@ export default function WorkPage() {
             <p className="mt-3 text-sm text-muted">{work.clientsNote}</p>
           </div>
           <ul className="flex flex-wrap gap-x-8 gap-y-3 text-lg font-medium">
-            {work.clients.map((c) => (
+            {(work.clients ?? []).map((c) => (
               <li key={c}>{c}</li>
             ))}
           </ul>

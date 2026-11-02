@@ -13,6 +13,9 @@ Conventions inside the text:
 - A link in a paragraph is written `[the words](https://the-url)`.
 - Project cards: leave Link empty for no link; leave Status empty for no badge; Double-width card is only for one card at a time.
 
+## If a change does not show up
+Give it a minute and hard-refresh. If it is still the old text, the build failed: open https://vercel.com, pick seo-site, and the Deployments list shows the red one and why. Clearing a field in Pages CMS removes it from the file, and the pages are written to cope with that, so a failed build means something else and is worth a message.
+
 ## The other easy way: GitHub itself
 Open https://github.com/rht55/seo-site/tree/main/content, click a file, click the pencil, edit, Commit changes. Same result, no forms.
 

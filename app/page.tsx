@@ -3,7 +3,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import Spotlight from "../components/Spotlight";
 import { Accent } from "../components/Inline";
-import home from "../content/home.json";
+import { home } from "../content";
 import type { Tile, Featured } from "../content/types";
 
 export const metadata: Metadata = {
@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 };
 
 export default function Home() {
-  const tiles = home.tiles as Tile[];
-  const featured = home.featured as Featured[];
+  const tiles: Tile[] = home.tiles ?? [];
+  const featured: Featured[] = home.featured ?? [];
   return (
     <>
       <section className="relative pt-16 sm:pt-24">
@@ -24,7 +24,7 @@ export default function Home() {
             <h1 className="mt-4 text-4xl font-semibold leading-[1.05] sm:text-5xl lg:text-6xl">
               <Accent text={home.headline} />
             </h1>
-            {home.intro.map((p) => (
+            {(home.intro ?? []).map((p) => (
               <p key={p} className="mt-6 max-w-xl text-lg text-muted first:mt-6 [&:not(:first-of-type)]:mt-4">
                 {p}
               </p>
@@ -56,7 +56,7 @@ export default function Home() {
                 priority
               />
             </div>
-            <span className="sticker absolute -left-3 top-6 sm:-left-6">{home.sticker}</span>
+            {home.sticker ? <span className="sticker absolute -left-3 top-6 sm:-left-6">{home.sticker}</span> : null}
           </div>
         </div>
       </section>
