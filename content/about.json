@@ -1,19 +1,34 @@
 {
   "title": "About",
-  "description": "Rick Talbot: founder and director of Totally Digital, in SEO since 2012 and ten years inside a software development company. Cycling, coffee, finance and an early interest in AI.",
+  "description": "Rick Talbot: co-founder and director of Totally Digital, in SEO since 2012 and ten years inside a software development company. Cycling, coffee, finance and an early interest in AI.",
   "headline": "Gather the data, {simplify} the plan, ship.",
   "paragraphs": [
-    "I’m Rick, founder and director of Totally Digital, and have been an SEO in all the different forms that takes since 2012. I also spent ten-plus years inside a software development company, so engineering is a room I’m comfortable in rather than a department I hand things to. I’ve spent those years building search growth for B2C and B2B brands, the kind measured in revenue, not PowerPoints. I bridge product, marketing and engineering, translate constraints, and take the guesswork out of complex changes.",
-    "My default setting: gather the data, simplify the plan, ship. I enjoy finding and fixing problems, digital and physical, scaling websites out to drive traffic, working across disciplines, site architecture, diagnostics, and all the quiet details that keep websites stable at scale.",
+    "I’m Rick, co-founder and director of Totally Digital, and have been an SEO in all the different forms that takes since 2012. I also spent ten-plus years inside a software development company, so engineering is a department I’m comfortable in rather than a department I hand things to. I’ve spent those years building search growth for B2C and B2B brands. I bridge product, marketing and engineering, translate constraints, and enjoy take the guesswork out of complex changes.",
+    "I enjoy finding and fixing problems, digital and physical, scaling websites out to drive traffic, working across disciplines, site architecture, diagnostics, and all the quiet details that keep websites stable at scale.",
     "Off-screen: cycling, coffee (I ran [The Specialty Coffee Company](http://www.thespecialtycoffeecompany.com/), a mildly successful online shop, for a while), running (short distances), finance and economics, and an unhealthy interest in how AI is changing the world, from well before it was cool. I was emailing Ray Kurzweil at Google in 2011 and reading Superintelligence back in 2018."
   ],
   "primaryCta": "What I’ve built",
   "secondaryCta": "Say hello",
   "facts": [
-    { "label": "Role", "value": "Founder and Director, Totally Digital" },
-    { "label": "Based", "value": "London, remote friendly" },
-    { "label": "In SEO since", "value": "2012, fourteen years and counting" },
-    { "label": "Years in software", "value": "10+ inside a software development company" },
-    { "label": "Works with", "value": "C-suite, marketing, product, engineering, PR agencies" }
+    {
+      "label": "Role",
+      "value": "Co-founder and Director, Totally Digital"
+    },
+    {
+      "label": "Based",
+      "value": "London, remote friendly"
+    },
+    {
+      "label": "In SEO since",
+      "value": "2012, fourteen years and counting"
+    },
+    {
+      "label": "Years in software",
+      "value": "10+ inside a software development company"
+    },
+    {
+      "label": "Works with",
+      "value": "C-suite, marketing, product, engineering, PR agencies"
+    }
   ]
 }
