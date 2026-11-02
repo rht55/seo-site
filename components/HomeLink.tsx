@@ -19,7 +19,7 @@ export default function HomeLink({ className, children }: { className?: string; 
       onClick={(e) => {
         if (path === "/") {
           e.preventDefault();
-          window.scrollTo({ top: 0 });
+          window.scrollTo({ top: 0, behavior: "instant" });
         }
       }}
     >
