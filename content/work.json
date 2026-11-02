@@ -88,7 +88,7 @@
     {
       "name": "Now Then BMX",
       "kicker": "A web archive, rebuilt",
-      "body": "The old websites of five rider-run Northern UK BMX brands, 2000 to 2012, pulled out of the Wayback Machine and rebuilt so you can click around them again. Six hundred pages and nine hundred images, a capture timeline, an image wall, every lost image marked as lost, and a sourced history of the people and the scene.",
+      "body": "The old lost websites of five Northern UK BMX brands, 2000 to 2012, pulled out of the archives and rebuilt so you can click around them again. Six hundred pages and nine hundred images, a capture timeline, an image wall, every lost image marked as lost, and a sourced history of the people and the scene.",
       "stack": [
         "Python",
         "Wayback Machine",
