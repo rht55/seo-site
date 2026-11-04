@@ -83,7 +83,7 @@ export default function Home() {
         <ul className="grid gap-4 md:grid-cols-3">
           {featured.map((f) => (
             <Spotlight key={f.title} as="li" className="rounded-2xl">
-              <Link href={f.href} className="block p-6">
+              <Link href={f.href ?? "/"} className="block p-6">
                 <h3 className="text-lg font-semibold">{f.title}</h3>
                 <p className="mt-1 text-sm text-muted">{f.note}</p>
                 <span className="mt-4 inline-block text-sm text-accent">Open →</span>

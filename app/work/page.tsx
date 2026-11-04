@@ -94,7 +94,7 @@ export default function WorkPage() {
               </div>
               <p className="mt-3 flex-1 text-sm leading-relaxed text-muted">{p.body}</p>
               <div className="mt-5 flex flex-wrap items-center gap-1.5">
-                {p.stack.map((s) => (
+                {(p.stack ?? []).map((s) => (
                   <span key={s} className="rounded-md bg-accent-soft px-2 py-0.5 font-mono text-[0.68rem] text-fg">
                     {s}
                   </span>
@@ -136,7 +136,7 @@ export default function WorkPage() {
               <h3 className="text-lg font-semibold">{r.client}</h3>
               <p className="mt-2 text-sm text-muted">{r.what}</p>
               <dl className="mt-6 space-y-4">
-                {r.figures.map((f) => (
+                {(r.figures ?? []).map((f) => (
                   <div key={f.label} className="flex items-baseline justify-between gap-4 border-t hairline pt-3">
                     <dt className="text-sm text-muted">{f.label}</dt>
                     <dd className="font-mono text-2xl font-semibold tabular-nums text-fg">
@@ -163,7 +163,7 @@ export default function WorkPage() {
               <h3 className="mt-2 text-lg font-semibold">{s.title}</h3>
               <p className="mt-1 text-sm text-muted">{s.blurb}</p>
               <ul className="mt-4 space-y-2 text-sm">
-                {s.items.map((it) => (
+                {(s.items ?? []).map((it) => (
                   <li key={it} className="flex gap-2.5">
                     <span aria-hidden className="mt-[0.55em] h-1.5 w-1.5 shrink-0 rounded-full bg-accent" />
                     <span>{it}</span>

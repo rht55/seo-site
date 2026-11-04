@@ -24,12 +24,12 @@ export default function LabPage() {
       <ul className="mt-12 grid gap-4 md:grid-cols-2">
         {pieces.map((p) => (
           <Spotlight key={p.href} as="li" className="rounded-2xl">
-            <Link href={p.href} className="block p-6">
+            <Link href={p.href ?? "/lab"} className="block p-6">
               <p className="font-mono text-xs text-muted">{p.n}</p>
               <h2 className="mt-2 text-2xl font-semibold">{p.title}</h2>
               <p className="mt-2 text-sm text-muted">{p.note}</p>
               <div className="mt-4 flex flex-wrap gap-1.5">
-                {p.tags.map((t) => (
+                {(p.tags ?? []).map((t) => (
                   <span key={t} className="rounded-md bg-accent-soft px-2 py-0.5 font-mono text-[0.68rem]">
                     {t}
                   </span>

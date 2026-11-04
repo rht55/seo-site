@@ -24,7 +24,7 @@ export type IndexItem = { href: string; name: string; note: string };
  * field when it is cleared, so anything purely decorative is optional and the
  * pages treat every list as possibly missing.
  */
-type SectionCopy = { eyebrow: string; headline: string; intro?: string; caption?: string };
+export type SectionCopy = { eyebrow: string; headline: string; intro?: string; caption?: string };
 
 export type SiteContent = {
   name: string;

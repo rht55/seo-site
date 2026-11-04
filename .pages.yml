@@ -84,6 +84,9 @@ content:
     path: content/about.json
     format: json
     fields:
+      - name: title
+        label: Page name (small line above the headline, and the browser tab)
+        type: string
       - name: headline
         type: string
         description: "Wrap the italic word in {curly braces}."
@@ -119,6 +122,9 @@ content:
     path: content/work.json
     format: json
     fields:
+      - name: title
+        label: Browser tab title
+        type: string
       - name: hero
         label: Top of page
         type: object
@@ -130,8 +136,35 @@ content:
             description: "Wrap the italic word in {curly braces}."
           - name: intro
             type: text
+      - name: index
+        label: Jump links under the intro
+        type: object
+        list:
+          collapsible:
+            collapsed: true
+            summary: "{name}"
+        fields:
+          - name: name
+            type: string
+          - name: note
+            type: string
+          - name: href
+            label: "Link (the section it jumps to, like #built)"
+            type: string
+      - name: built
+        label: "Built: section heading"
+        type: object
+        fields:
+          - name: eyebrow
+            label: Small line above the headline
+            type: string
+          - name: headline
+            type: string
+            description: "Wrap the italic word in {curly braces}."
+          - name: intro
+            type: text
       - name: projects
-        label: Built (project cards)
+        label: "Built: project cards"
         type: object
         list:
           collapsible:
@@ -161,8 +194,11 @@ content:
           - name: wide
             label: Double-width card
             type: boolean
+      - name: smallThingsHeading
+        label: "Built: small stuff heading"
+        type: string
       - name: smallThings
-        label: The small stuff
+        label: "Built: small stuff"
         type: object
         list:
           collapsible:
@@ -172,8 +208,23 @@ content:
             type: string
           - name: what
             type: text
+      - name: receiptsSection
+        label: "Receipts: section heading"
+        type: object
+        fields:
+          - name: eyebrow
+            label: Small line above the headline
+            type: string
+          - name: headline
+            type: string
+            description: "Wrap the italic word in {curly braces}."
+          - name: intro
+            type: text
+          - name: caption
+            label: Small print under the figures
+            type: text
       - name: receipts
-        label: Receipts (case study results)
+        label: "Receipts: case study results"
         type: object
         list:
           collapsible:
@@ -206,8 +257,20 @@ content:
                 type: number
               - name: label
                 type: string
+      - name: seoSection
+        label: "The SEO bit: section heading"
+        type: object
+        fields:
+          - name: eyebrow
+            label: Small line above the headline
+            type: string
+          - name: headline
+            type: string
+            description: "Wrap the italic word in {curly braces}."
+          - name: intro
+            type: text
       - name: skills
-        label: The SEO bit (skill groups)
+        label: "The SEO bit: skill groups"
         type: object
         list:
           collapsible:
@@ -221,20 +284,36 @@ content:
           - name: items
             type: string
             list: true
+      - name: toolboxSection
+        label: "Toolbox: section heading"
+        type: object
+        fields:
+          - name: eyebrow
+            label: Small line above the headline
+            type: string
+          - name: headline
+            type: string
+            description: "Wrap the italic word in {curly braces}."
       - name: toolsRowA
-        label: Toolbox, top row
+        label: "Toolbox: top row"
         type: string
         list: true
       - name: toolsRowB
-        label: Toolbox, bottom row
+        label: "Toolbox: bottom row"
         type: string
         list: true
+      - name: clientsHeading
+        label: "Clients: heading"
+        type: string
+      - name: clientsNote
+        label: "Clients: note"
+        type: text
       - name: clients
-        label: Client names
+        label: "Clients: names"
         type: string
         list: true
       - name: cta
-        label: Bottom call to action
+        label: "Bottom call to action"
         type: object
         fields:
           - name: headline
@@ -255,6 +334,9 @@ content:
     path: content/lab.json
     format: json
     fields:
+      - name: title
+        label: Page name (small line above the headline, and the browser tab)
+        type: string
       - name: headline
         type: string
       - name: intro
@@ -289,6 +371,9 @@ content:
     path: content/contact.json
     format: json
     fields:
+      - name: title
+        label: Page name (small line above the headline, and the browser tab)
+        type: string
       - name: headline
         type: string
       - name: intro
