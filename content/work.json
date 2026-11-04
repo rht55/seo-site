@@ -3,8 +3,8 @@
   "description": "Things Richard Talbot has built, measured and shipped: AI answer tracking, client dashboards, data visualisations, side products, and the SEO results behind them.",
   "hero": {
     "eyebrow": "Work · index",
-    "headline": "Things I’ve {built}, measured and shipped.",
-    "intro": "Not just an SEO. The strategy is the easy part to talk about, so here is the stuff that exists: the products, the data pieces, the dashboards, and the numbers behind the client work."
+    "headline": "Things I’ve personally {built}, measured and shipped.",
+    "intro": "The strategy is the easy part to talk about, so here are the things that exists: products, data pieces, dashboards, experiments, tools, and some numbers behind client work."
   },
   "index": [
     {
