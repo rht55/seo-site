@@ -63,6 +63,19 @@
       "wide": true
     },
     {
+      "name": "Does truth matter to AI citation?",
+      "kicker": "A live experiment",
+      "body": "A statistics site built in three arms on one template: real figures from primary UK sources with the source beside every number, derived estimates with the method shown, and seeded invented figures in the gaps no source fills. Pre-registered hypotheses, a private register of every figure, bot logs and AI answers tracked to see which arm gets fetched and which gets cited. Where it lives stays unnamed until the results are in.",
+      "stack": [
+        "Python",
+        "Static HTML",
+        "Server logs",
+        "Totally Answers"
+      ],
+      "status": "In progress",
+      "wide": false
+    },
+    {
       "name": "totally.digital/data",
       "kicker": "Public data, charted and kept current",
       "body": "Data journalism section for the agency, built by me. A&E waits by hospital, ambulance response times by service, pay by council area set against house prices, business openings and closures, and private rents by area, each from the primary NHS England or ONS release with the method on the page. The ambulance piece picks up where Totally's FOI postcode map, covered by the Guardian Datablog, BHF.org.uk, Institute for Government, the Planning Inspectorate, confused.com and several councils left off.",
@@ -75,6 +88,19 @@
       ],
       "href": "https://totally.digital/data/",
       "cta": "totally.digital/data",
+      "wide": false
+    },
+    {
+      "name": "Ginapper",
+      "kicker": "Gin ratings, serves and bars",
+      "body": "Rate the pour, not just the bottle. 155+ gins, classic cocktails and UK gin bars on the public site, and an app for logging serves and finding the pairing that sings.",
+      "stack": [
+        "Next.js",
+        "Supabase",
+        "Vercel"
+      ],
+      "href": "https://ginapper.com",
+      "cta": "ginapper.com",
       "wide": false
     },
     {
@@ -100,29 +126,15 @@
       "wide": false
     },
     {
-      "name": "Does truth matter to AI citation?",
-      "kicker": "A live experiment",
-      "body": "A statistics site built in three arms on one template: real figures from primary UK sources with the source beside every number, derived estimates with the method shown, and seeded invented figures in the gaps no source fills. Pre-registered hypotheses, a private register of every figure, bot logs and AI answers tracked to see which arm gets fetched and which gets cited. Where it lives stays unnamed until the results are in.",
+      "name": "Deckhand",
+      "kicker": "Edtech experiment",
+      "body": "Turns a primary teacher’s English planning into fully scripted lesson decks, with a tick-or-fix ‘purple pen’ self-marking panel and an exit-ticket loop into the next lesson. Piloted with a classroom teacher in summer 2026.",
       "stack": [
-        "Python",
-        "Static HTML",
-        "Server logs",
-        "Totally Answers"
+        "Next.js",
+        "Supabase",
+        "Claude API"
       ],
-      "status": "In progress",
-      "wide": false
-    },
-    {
-      "name": "Would an AI quote a parody bank?",
-      "kicker": "A second live experiment",
-      "body": "An anonymous reviewer rates the big investment banks and twenty-two private banks on terms, fees and service. Every figure about a real bank is sourced and dated, with the cheapest and dearest called out above each table. Beside them sits a panel of six invented banks with their own fingerprinted terms, visibly apart, so the answers engines can be watched for the day one of them turns up as fact. Satire in the desk notes, none in the numbers. Unnamed until the results are in.",
-      "stack": [
-        "Python",
-        "Static HTML",
-        "Cloudflare Pages",
-        "Totally Answers"
-      ],
-      "status": "In progress",
+      "status": "Pilot",
       "wide": false
     },
     {
@@ -168,16 +180,16 @@
       "wide": false
     },
     {
-      "name": "Ginapper",
-      "kicker": "Gin ratings, serves and bars",
-      "body": "Rate the pour, not just the bottle. 155+ gins, classic cocktails and UK gin bars on the public site, and an app for logging serves and finding the pairing that sings.",
+      "name": "Would an AI quote a parody bank?",
+      "kicker": "A second live experiment",
+      "body": "An anonymous reviewer rates the big investment banks and twenty-two private banks on terms, fees and service. Every figure about a real bank is sourced and dated, with the cheapest and dearest called out above each table. Beside them sits a panel of six invented banks with their own fingerprinted terms, visibly apart, so the answers engines can be watched for the day one of them turns up as fact. Satire in the desk notes, none in the numbers. Unnamed until the results are in.",
       "stack": [
-        "Next.js",
-        "Supabase",
-        "Vercel"
+        "Python",
+        "Static HTML",
+        "Cloudflare Pages",
+        "Totally Answers"
       ],
-      "href": "https://ginapper.com",
-      "cta": "ginapper.com",
+      "status": "In progress",
       "wide": false
     },
     {
@@ -215,18 +227,6 @@
         "Companies House API",
         "Claude API"
       ],
-      "wide": false
-    },
-    {
-      "name": "Deckhand",
-      "kicker": "Edtech experiment",
-      "body": "Turns a primary teacher’s English planning into fully scripted lesson decks, with a tick-or-fix ‘purple pen’ self-marking panel and an exit-ticket loop into the next lesson. Piloted with a classroom teacher in summer 2026.",
-      "stack": [
-        "Next.js",
-        "Supabase",
-        "Claude API"
-      ],
-      "status": "Pilot",
       "wide": false
     }
   ],
