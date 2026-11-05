@@ -37,7 +37,7 @@
     {
       "name": "Lil’ Shelf",
       "kicker": "Free children’s books online",
-      "body": "Stories, rhymes and poems from the public domain, read aloud by age and browsable by kind. Free to read, free to keep. A public site plus a reading app that lives on the home screen, on my phone and on friends’ phones.",
+      "body": "For the Lils. Stories, rhymes and poems from the public domain, read aloud and browsable by type. Free to read, free to keep (even when offline). A public site plus a reading app (PWA) that lives on the home screen. ",
       "stack": [
         "Next.js",
         "PWA",
