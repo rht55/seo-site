@@ -65,7 +65,7 @@
     {
       "name": "Does truth matter to AI citation?",
       "kicker": "A live experiment",
-      "body": "A statistics site built in three arms on one template: real figures from primary UK sources with the source beside every number, derived estimates with the method shown, and seeded invented figures in the gaps no source fills. Pre-registered hypotheses, a private register of every figure, bot logs and AI answers tracked to see which arm gets fetched and which gets cited. Where it lives stays unnamed until the results are in.",
+      "body": "A statistics site built in three arms on one template: real figures from primary UK sources with the source beside every number, derived estimates with the method shown, and seeded invented figures in the gaps no source fills. Pre-registered hypotheses, a private register of every figure, bot logs and AI answers tracked to see which arm gets fetched and which gets cited. Where it lives stays unnamed until the results are in. Already receiving Google traffic (although I expect this to die). ",
       "stack": [
         "Python",
         "Static HTML",
@@ -78,7 +78,7 @@
     {
       "name": "totally.digital/data",
       "kicker": "Public data, charted and kept current",
-      "body": "Data journalism section for the agency, built by me. A&E waits by hospital, ambulance response times by service, pay by council area set against house prices, business openings and closures, and private rents by area, each from the primary NHS England or ONS release with the method on the page. The ambulance piece picks up where Totally's FOI postcode map, covered by the Guardian Datablog, BHF.org.uk, Institute for Government, the Planning Inspectorate, confused.com and several councils left off.",
+      "body": "Data journalism section for my agency, built by me. A&E waits by hospital, ambulance response times by service, pay by council area set against house prices, business openings and closures, and private rents by area, each from the primary NHS England or ONS release with the method on the page. The ambulance piece was covered by the Guardian Datablog, BHF.org.uk, Institute for Government, the Planning Inspectorate, confused.com and several councils.",
       "stack": [
         "NHS England",
         "ONS",
