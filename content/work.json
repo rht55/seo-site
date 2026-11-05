@@ -100,18 +100,6 @@
       "wide": false
     },
     {
-      "name": "Monthly AI answer reports",
-      "kicker": "Eight clients, one builder, drafts on the first",
-      "body": "The PR-led AI answer report, built once for every client instead of by hand each time: where the client is included, the pages the answers draw on, the targets and the fixes. A decisions file per client carries every judgement forward so a month never quietly reverses one, and an independent check reads each draft before it lands in the client's Drive folder for review.",
-      "stack": [
-        "Python",
-        "Totally Answers API",
-        "Google Drive"
-      ],
-      "status": "Running monthly",
-      "wide": false
-    },
-    {
       "name": "Does truth matter to AI citation?",
       "kicker": "A live experiment",
       "body": "A statistics site built in three arms on one template: real figures from primary UK sources with the source beside every number, derived estimates with the method shown, and seeded invented figures in the gaps no source fills. Pre-registered hypotheses, a private register of every figure, bot logs and AI answers tracked to see which arm gets fetched and which gets cited. Where it lives stays unnamed until the results are in.",
@@ -190,6 +178,18 @@
       ],
       "href": "https://ginapper.com",
       "cta": "ginapper.com",
+      "wide": false
+    },
+    {
+      "name": "AI answer data crunch",
+      "kicker": "Recipe of targets and the fixes based on historical data (bulk collection)",
+      "body": "The PR-led AI answer report, crunched against other providers: where the client is included, the pages the answers draw on. A decisions file per client vs other tools, an independent check reads each analysis before it lands - recursive self improvement of data based on feedback from the team and the client. ",
+      "stack": [
+        "Python",
+        "Totally Answers API",
+        "Google Drive"
+      ],
+      "status": "Running monthly",
       "wide": false
     },
     {
