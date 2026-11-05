@@ -4,7 +4,7 @@
   "hero": {
     "eyebrow": "Work · index",
     "headline": "Things I’ve personally {built}, measured and shipped.",
-    "intro": "The strategy is the easy part to talk about, so here are some examples of the things I have built that exist: products, data pieces, dashboards, experiments, tools, and some numbers behind client work I have done. The list would be too long if I included everything, so this is just a snapshot. For example, 20% (4 of the 20) extensions enabled on my browser while writing this page (on pagescms.org); I made myself. "
+    "intro": "The strategy is the easy part to talk about, so here are some examples of the things I have built that exist: products, data pieces, dashboards, experiments, tools, and some numbers behind client work I have done. The list would be too long if I included everything, so this is just a snapshot. Quick example on just this Chrome profile, 20% (4 of the 20) extensions enabled while writing this page (on pagescms.org 👌); I made myself. "
   },
   "index": [
     {
