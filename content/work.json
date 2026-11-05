@@ -50,7 +50,7 @@
     {
       "name": "Totally Answers",
       "kicker": "AI answer tracking for PR agencies",
-      "body": "Which questions AI answer with a client in them, which sources those answers lean on, and what to do about it. Built as a product behind our managed service: question baskets, daily checks, source classification, insight cards, and a report to hand to a client.",
+      "body": "Which questions AI answer with a client in them, which sources those answers lean on, and what to do about it. Built as a product behind our managed service: question baskets, daily checks, source classification, insight cards, and a report to hand to a client. ",
       "stack": [
         "Next.js",
         "TypeScript",
