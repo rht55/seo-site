@@ -93,7 +93,7 @@
     {
       "name": "Ginapper",
       "kicker": "Gin ratings, serves and bars",
-      "body": "Rate the pour, not just the bottle. 155+ gins, classic cocktails and UK gin bars on the public site, and an app for logging serves and finding the pairing that sings.",
+      "body": "Rate the pour, not just the bottle. 155+ gins, classic cocktails and UK gin bars on the public site, and an app for logging serves and finding the pairing that sings. Made for my mate Ryan at Chain House Brewing Co, who then decided to completely ignore the idea. ",
       "stack": [
         "Next.js",
         "Supabase",
@@ -106,7 +106,7 @@
     {
       "name": "Release watcher",
       "kicker": "The charts update themselves",
-      "body": "A scheduled job that reads the NHS England and ONS release pages, one request at a time, spots a new edition, rebuilds the affected piece in a staging copy, checks it, re-renders the images and only then promotes it. A second script updates the live pages over the WordPress API, hub last, and clears the cache. It runs to the release calendar rather than a guess: NHS on the second Thursday, ONS on its own Wednesdays.",
+      "body": "A schedule that reads the NHS England and ONS release pages, records a new edition, rebuilds the affected piece, checks it, re-renders the images and then promotes it. A second script updates the live pages over the WordPress API. It runs to a release calendar so I don't waste valuable tokens. ",
       "stack": [
         "Python",
         "Scheduled runs",
@@ -118,7 +118,7 @@
     {
       "name": "Labrador",
       "kicker": "Chrome extension",
-      "body": "Captures real chatgpt.com answers and the sources they cite to CSV, then pushes them into Totally Answers. The thing the API will never show you: what a signed-in human actually sees.",
+      "body": "Captures real chatgpt.com answers and the sources they cite to CSV, then pushes them into Totally Answers. The thing the API will never show you: what a signed-in human actually sees. My original idea that others then decided to copy / promote better. ",
       "stack": [
         "Chrome MV3",
         "TypeScript"
@@ -128,7 +128,7 @@
     {
       "name": "Deckhand",
       "kicker": "Edtech experiment",
-      "body": "Turns a primary teacher’s English planning into fully scripted lesson decks, with a tick-or-fix ‘purple pen’ self-marking panel and an exit-ticket loop into the next lesson. Piloted with a classroom teacher in summer 2026.",
+      "body": "Turns a primary teacher’s English planning into fully scripted lesson decks, self-marking panel and an exit-ticket loop into the next lesson. Built and piloted with a classroom teacher in 2026 (Oxford graduate)... (my sister).",
       "stack": [
         "Next.js",
         "Supabase",
